@@ -21,15 +21,132 @@
   <div class="container">
     <h1>Laboratories</h1>
     <p class="subtitle">
-      Selected laboratory work from Engineering & Computer Science studies
+      Selected academic laboratories throughout my studies in Mechatronics Engineering and Computer Science.
     </p>
 
+    <h3>Designing Controllers</h3>
     <ul>
-      <li>Control Systems & Robotics Laboratories</li>
-      <li>Embedded Systems & Microcontrollers</li>
-      <li>Engineering Mathematics & Modelling Labs</li>
-      <li>Software Development & Algorithms Laboratories</li>
-      <li>Networking & Security Practical Labs</li>
+      <li><strong>Digital Control and Pendulum Balancing Project</strong>
+      <p>It was a group work where we designed and implemented digital controllers using MATLAB, Simulink, 
+        and QUARC for a servo-driven rotary pendulum system. The project involved 
+        modelling continuous and discrete-time control systems with zero-order hold,
+         analysing step responses, and designing lead compensators for improved transient
+          performance. A full state-space model of the rotary pendulum was derived using 
+          Euler–Lagrange dynamics, linearised, and validated through controllability 
+          analysis. State-feedback gains were calculated using pole 
+          placement to meet specified performance criteria (overshoot and settling time),
+           and the controller was successfully deployed on Quanser QUBE-Servo 3 hardware to
+            achieve real-time pendulum balancing. The effects of sampling time on digital 
+            control performance were also analysed and evaluated.
+      </p>
+    <p>Find here is the link to the project report after completion: <a href="Lab4.pdf">Project Report</a>
+    <p>Find here is the video demo of the Pendulum Balancing
+   <section class="project-video">
+        <h3>Pendulum Balancing</h3>
+        <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/tUpMeVOJP-E"         
+        title="YouTube video player" 
+        frameborder="0" 
+         
+        allowfullscreen></iframe>
+        </section></p>
+  </p>
+    </li>
+      <li><strong>Designing PID Controllers</strong>
+      <p>Completed a control systems assignment focused on designing and tuning PID and 
+        lead/lag controllers using MATLAB for robotic and aircraft control applications. 
+        The work involved modelling dynamic systems, selecting controller parameters to meet 
+        performance requirements such as low overshoot, fast settling time, and minimal 
+        steady-state error, and analysing system responses through simulation. 
+        Multiple controller designs were evaluated and compared to verify stability, 
+        damping, and tracking performance, demonstrating practical controller design 
+        skills for real-world robotic and aerospace systems.</p>
+      <p>Find here is the link to the Assignment Question pdf file: <a href="RControlAssQ.pdf">Assignment Question</a></p>
+        <p>Find here is the link to my pdf file submission: <a href="RoboticAssignment1.pdf">My Submission</a></p>
+    </li>
+    </ul>
+
+    <h3>Using Logisim Software & ARMLite Simulator</h3>
+    <ul>
+      <li><p><strong>Using Logisim Software to create Digital STOPWATCH</strong></p>
+      <p>
+        Developed a fully functional digital stopwatch using Logisim, implementing start/stop, 
+        reset, seconds, minutes, and features. Designed modular circuits using logic 
+        gates, flip-flops (JK, D, T, SR), counters, splitters, LEDs, buttons, and hex digit 
+        displays to ensure accurate timekeeping and proper interface interaction. 
+        Each stage was documented, tested, and verified, demonstrating practical 
+        skills in digital logic design, circuit implementation, and problem-solving.
+      </p>
+    <p>Find here is the link to the video Demo after completion:
+      <section class="project-video">
+        <h3>StopWatch Demo</h3>
+        <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/zOxtAvIImqQ"     
+        title="YouTube video player" 
+        frameborder="0" 
+         
+        allowfullscreen></iframe>
+        </section></p>
+    </p></li>
+      <li><p><strong>Using Assembly Language to create a Simple adding subtracting Game in Web-based ARMLite Simulator</strong></p>
+      <p>
+        Developed a fully functional Matchsticks game in ARM assembly, implementing a single-player vs computer mode 
+        with alternating turns, input validation, and game logic to determine wins, losses, or draws. The project used 
+        ARMlite functions, arrays, and random number generation, progressively built in stages to handle player input, 
+        matchstick counting, and game state updates. The final version incorporated a graphical display of remaining matchsticks,
+        demonstrating skills in assembly programming, algorithm design, and creative interface implementation.
+      </p>
+      <p>Find here is the link to the text file of the FULL Assembly Language code of the game: <a href="stage4.txt">FULL Game Code</a></p>
+      <p>Find here is the link to the video Demo after completion:
+      <section class="project-video">
+        <h3>Matchsticks Game Demo</h3>
+        <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/BUY-UNhl57k" 
+        title="YouTube video player" 
+        frameborder="0" 
+         
+        allowfullscreen></iframe>
+        </section>
+      </p>
+    </li>
+     
+    </ul>
+
+    <h3>Website Security</h3>
+    <ul>
+      <li><p><strong>Secure Web Deployment with Chained Certificates</strong></p>
+      <p>Implemented a HTTPS website secured by a certificate chain signed by a trusted root authority, 
+        ensuring the browser recognized it as secure with a green padlock. Created an 
+        Intermediate Certificate Authority (CA), generated the web server certificate, 
+        and chained it with the intermediate certificate for deployment on Apache. 
+        Verified secure communication using Wireshark and configured browser trust by 
+        installing the root certificate. This project demonstrated skills in certificate 
+        management, web server configuration, encryption verification, and secure system 
+        deployment.</p>
+        <p>Find here is the link to the summary report after completion of LAB: <a href="rule110_tne30024_Lab05-C.pdf">Summary Report</a></p>
+    </li>
+    </ul>
+
+    <h3>PLC Programming</h3>
+    <ul>
+      <li><p><strong>What is a PLC (Programmable Logic Controller)?</strong></p>
+      <p>A PLC is a specialised industrial computer used to control machines and automated 
+        processes. It reads inputs from sensors and switches, processes them using a control 
+        program, and then controls outputs such as motors, valves, and actuators. PLCs are 
+        designed to be reliable, fast, and robust, making them ideal for use in factories, 
+        production lines, and automated systems like pick-and-place mechanisms.</p>
+        <p><strong>Pick-and-Place PLC Programming</strong></p>
+      <p>
+        The PLC program controls a pick-and-place mechanism using a step-by-step sequence. 
+        It starts when the operator presses the start button, moves the arm to the pick 
+        position, lowers it to grab the object using a vacuum gripper, then lifts and 
+        moves the object to the place position. After releasing the object, the system 
+        returns to its home position and waits for the next cycle. Sensors are used at 
+        each stage to confirm positions, ensuring safe, accurate, and reliable operation.
+      </p>
+      <p>Find here is the link to the text file of the PLC Programming FULL CODE after 
+        completion: <a href="PLC.txt">PLC Report</a></p>
+      </li>
     </ul>
 
     <p>
