@@ -51,6 +51,9 @@ h1 {
   color: #f5c542; /* Gold */
   font-size: 32px;
   margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 h2 {
@@ -80,4 +83,16 @@ ul {
 li {
   margin-bottom: 8px;
   color: #f0f0f0;
+}
+
+.profile-pic {
+  width: 315px;
+  height: 400px;
+  border-radius: 0%;   /* makes it circular */
+  object-fit: cover;
+  border: 3px solid #333;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
