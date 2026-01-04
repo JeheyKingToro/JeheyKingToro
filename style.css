@@ -91,4 +91,6 @@ li {
   border-radius: 0%;   /* makes it circular */
   object-fit: cover;
   border: 3px solid #333;
+
+  
 }
