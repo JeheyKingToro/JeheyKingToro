@@ -4,176 +4,237 @@
   <meta charset="UTF-8">
   <title>Laboratories – John Baptist Matambuai Javapro</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="bg-light">
 
-  <!-- Navigation -->
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="labs.html">Labs</a></li>
-      <li><a href="projects.html">Projects</a></li>
-    </ul>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">DevApp</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active fw-bold" href="labs.html">Labs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="projects.html">Projects</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </nav>
 
-  <div class="container">
-    <h1>Laboratories</h1>
-    <p class="subtitle">
-      Selected academic laboratories throughout my studies in Mechatronics Engineering and Computer Science.
-    </p>
-
-    <h3>Designing Controllers</h3>
-    <ul>
-      <li><strong>Digital Control and Pendulum Balancing Project</strong>
-      <p>It was a group work where we designed and implemented digital controllers using MATLAB, Simulink, 
-        and QUARC for a servo-driven rotary pendulum system. The project involved 
-        modelling continuous and discrete-time control systems with zero-order hold,
-         analysing step responses, and designing lead compensators for improved transient
-          performance. A full state-space model of the rotary pendulum was derived using 
-          Euler–Lagrange dynamics, linearised, and validated through controllability 
-          analysis. State-feedback gains were calculated using pole 
-          placement to meet specified performance criteria (overshoot and settling time),
-           and the controller was successfully deployed on Quanser QUBE-Servo 3 hardware to
-            achieve real-time pendulum balancing. The effects of sampling time on digital 
-            control performance were also analysed and evaluated.
+  <div class="container py-5">
+    
+    <div class="card shadow-sm border-0 p-4 mb-5 bg-white rounded-3">
+      <h1 class="display-5 fw-bold mb-2">Laboratories</h1>
+      <p class="text-muted lead mb-0">
+        Selected academic laboratories throughout my studies in Mechatronics Engineering and Computer Science.
       </p>
-    <p>Find here is the link to the project report after completion: <a href="Lab4.pdf">Project Report</a>
-    <p>Find here is the video demo of the Pendulum Balancing
-   <section class="project-video">
-        <h3>Pendulum Balancing</h3>
-        <iframe width="560" height="315" 
-        src="https://www.youtube.com/embed/tUpMeVOJP-E"         
-        title="YouTube video player" 
-        frameborder="0" 
-         
-        allowfullscreen></iframe>
-        </section></p>
-  </p>
-    </li>
-      <li><strong>Designing PID Controllers</strong>
-      <p>Completed a control systems assignment focused on designing and tuning PID and 
-        lead/lag controllers using MATLAB for robotic and aircraft control applications. 
-        The work involved modelling dynamic systems, selecting controller parameters to meet 
-        performance requirements such as low overshoot, fast settling time, and minimal 
-        steady-state error, and analysing system responses through simulation. 
-        Multiple controller designs were evaluated and compared to verify stability, 
-        damping, and tracking performance, demonstrating practical controller design 
-        skills for real-world robotic and aerospace systems.</p>
-      <p>Find here is the link to the Assignment Question pdf file: <a href="RControlAssQ.pdf">Assignment Question</a></p>
-        <p>Find here is the link to my pdf file submission: <a href="RoboticAssignment1.pdf">My Submission</a></p>
-    </li>
-      
-      <li><strong>Magnetic Levitation (MATLAB & Control Systems)</strong>
-      <p>Analysed and modelled a nonlinear magnetic levitation (Maglev) system using MATLAB. Linearised the nonlinear dynamics 
-        about an equilibrium point, derived the plant transfer function, and evaluated system stability using root locus techniques. 
-        Designed and compared P, PD, and PID controllers through simulation and experimental testing, analysing step responses, 
-        stability, accuracy, and transient performance. Demonstrated practical understanding of controller effects on nonlinear 
-        systems and real-world validation through laboratory experiments.</p>
-      <p>Find here is the link to the Lab Question pdf file: <a href="lab4.pdf">Lab Question</a></p>
-         <p>Find here is the link to the video of the Magnet Levitation:
-      <section class="project-video">
-        <h3>Magnet Levitation</h3>
-        <iframe width="560" height="315" 
-        src="https://www.youtube.com/embed/bXhfB_hUN0g"    
-        title="YouTube video player" 
-        frameborder="0" 
-         
-        allowfullscreen></iframe>
-        </section></p>
-    </li>
-    </ul>
+    </div>
 
-    <h3>Using Logisim Software & ARMLite Simulator</h3>
-    <ul>
-      <li><p><strong>Using Logisim Software to create Digital STOPWATCH</strong></p>
-      <p>
-        Developed a fully functional digital stopwatch using Logisim, implementing start/stop, 
-        reset, seconds, minutes, and features. Designed modular circuits using logic 
-        gates, flip-flops (JK, D, T, SR), counters, splitters, LEDs, buttons, and hex digit 
-        displays to ensure accurate timekeeping and proper interface interaction. 
-        Each stage was documented, tested, and verified, demonstrating practical 
-        skills in digital logic design, circuit implementation, and problem-solving.
-      </p>
-    <p>Find here is the link to the video Demo after completion:
-      <section class="project-video">
-        <h3>StopWatch Demo</h3>
-        <iframe width="560" height="315" 
-        src="https://www.youtube.com/embed/zOxtAvIImqQ"     
-        title="YouTube video player" 
-        frameborder="0" 
-         
-        allowfullscreen></iframe>
-        </section></p>
-    </p></li>
-      <li><p><strong>Using Assembly Language to create a Simple adding subtracting Game in Web-based ARMLite Simulator</strong></p>
-      <p>
-        Developed a fully functional Matchsticks game in ARM assembly, implementing a single-player vs computer mode 
-        with alternating turns, input validation, and game logic to determine wins, losses, or draws. The project used 
-        ARMlite functions, arrays, and random number generation, progressively built in stages to handle player input, 
-        matchstick counting, and game state updates. The final version incorporated a graphical display of remaining matchsticks,
-        demonstrating skills in assembly programming, algorithm design, and creative interface implementation.
-      </p>
-      <p>Find here is the link to the text file of the FULL Assembly Language code of the game: <a href="stage4.txt">FULL Game Code</a></p>
-      <p>Find here is the link to the video Demo after completion:
-      <section class="project-video">
-        <h3>Matchsticks Game Demo</h3>
-        <iframe width="560" height="315" 
-        src="https://www.youtube.com/embed/BUY-UNhl57k" 
-        title="YouTube video player" 
-        frameborder="0" 
-         
-        allowfullscreen></iframe>
-        </section>
-      </p>
-    </li>
-     
-    </ul>
+    <div class="mb-5">
+      <h3 class="fw-bold border-bottom pb-2 mb-4 text-primary">
+        Designing Controllers
+      </h3>
+      <div class="row g-4">
+        
+        <div class="col-12">
+          <div class="card shadow-sm border-0 h-100">
+            <div class="card-body p-4">
+              <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-start mb-2">
+                <h4 class="card-title fw-bold text-dark">Digital Control and Pendulum Balancing Project</h4>
+                <span class="badge bg-primary fs-6 mt-2 mt-md-0">MATLAB / Simulink / QUARC</span>
+              </div>
+              <p class="card-text text-muted">
+                It was a group work where we designed and implemented digital controllers using MATLAB, Simulink, and QUARC for a servo-driven rotary pendulum system. The project involved modelling continuous and discrete-time control systems with zero-order hold, analysing step responses, and designing lead compensators for improved transient performance. A full state-space model of the rotary pendulum was derived using Euler–Lagrange dynamics, linearised, and validated through controllability analysis. State-feedback gains were calculated using pole placement to meet specified performance criteria (overshoot and settling time), and the controller was successfully deployed on Quanser QUBE-Servo 3 hardware to achieve real-time pendulum balancing. The effects of sampling time on digital control performance were also analysed and evaluated.
+              </p>
+              
+              <div class="mb-3">
+                <a href="Lab4.pdf" target="_blank" class="btn btn-outline-primary btn-sm me-2">
+                  Project Report PDF
+                </a>
+              </div>
 
-    <h3>Website Security</h3>
-    <ul>
-      <li><p><strong>Secure Web Deployment with Chained Certificates</strong></p>
-      <p>Implemented a HTTPS website secured by a certificate chain signed by a trusted root authority, 
-        ensuring the browser recognized it as secure with a green padlock. Created an 
-        Intermediate Certificate Authority (CA), generated the web server certificate, 
-        and chained it with the intermediate certificate for deployment on Apache. 
-        Verified secure communication using Wireshark and configured browser trust by 
-        installing the root certificate. This project demonstrated skills in certificate 
-        management, web server configuration, encryption verification, and secure system 
-        deployment.</p>
-        <p>Find here is the link to the summary report after completion of LAB: <a href="rule110_tne30024_Lab05-C.pdf">Summary Report</a></p>
-    </li>
-    </ul>
+              <div class="mt-4">
+                <h6 class="fw-bold mb-3">Pendulum Balancing Demo Video</h6>
+                <div class="ratio ratio-16x9 rounded overflow-hidden shadow-sm" style="max-width: 700px;">
+                  <iframe src="https://www.youtube.com/embed/tUpMeVOJP-E" title="Pendulum Balancing Demo" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-    <h3>PLC Programming</h3>
-    <ul>
-      <li><p><strong>What is a PLC (Programmable Logic Controller)?</strong></p>
-      <p>A PLC is a specialised industrial computer used to control machines and automated 
-        processes. It reads inputs from sensors and switches, processes them using a control 
-        program, and then controls outputs such as motors, valves, and actuators. PLCs are 
-        designed to be reliable, fast, and robust, making them ideal for use in factories, 
-        production lines, and automated systems like pick-and-place mechanisms.</p>
-        <p><strong>Pick-and-Place PLC Programming</strong></p>
-      <p>
-        The PLC program controls a pick-and-place mechanism using a step-by-step sequence. 
-        It starts when the operator presses the start button, moves the arm to the pick 
-        position, lowers it to grab the object using a vacuum gripper, then lifts and 
-        moves the object to the place position. After releasing the object, the system 
-        returns to its home position and waits for the next cycle. Sensors are used at 
-        each stage to confirm positions, ensuring safe, accurate, and reliable operation.
+        <div class="col-md-6">
+          <div class="card shadow-sm border-0 h-100">
+            <div class="card-body p-4 d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h5 class="card-title fw-bold">Designing PID Controllers</h5>
+                <span class="badge bg-secondary">MATLAB</span>
+              </div>
+              <p class="card-text text-muted small flex-grow-1">
+                Completed a control systems assignment focused on designing and tuning PID and lead/lag controllers using MATLAB for robotic and aircraft control applications. The work involved modelling dynamic systems, selecting controller parameters to meet performance requirements such as low overshoot, fast settling time, and minimal steady-state error, and analysing system responses through simulation. Multiple controller designs were evaluated and compared to verify stability, damping, and tracking performance.
+              </p>
+              <div class="d-flex flex-wrap gap-2 mt-3 pt-2 border-top">
+                <a href="RControlAssQ.pdf" target="_blank" class="btn btn-outline-secondary btn-sm">
+                  Assignment Question PDF
+                </a>
+                <a href="RoboticAssignment1.pdf" target="_blank" class="btn btn-outline-primary btn-sm">
+                  My Submission PDF
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card shadow-sm border-0 h-100">
+            <div class="card-body p-4 d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h5 class="card-title fw-bold">Magnetic Levitation (Maglev)</h5>
+                <span class="badge bg-secondary">Control Systems</span>
+              </div>
+              <p class="card-text text-muted small flex-grow-1 mb-3">
+                Analysed and modelled a nonlinear magnetic levitation (Maglev) system using MATLAB. Linearised the nonlinear dynamics about an equilibrium point, derived the plant transfer function, and evaluated system stability using root locus techniques. Designed and compared P, PD, and PID controllers through simulation and experimental testing.
+              </p>
+              <div class="mb-3">
+                <a href="lab4.pdf" target="_blank" class="btn btn-outline-secondary btn-sm">
+                  Lab Question PDF
+                </a>
+              </div>
+              <div class="mt-auto pt-2 border-top">
+                <h6 class="fw-bold small mb-2">Magnet Levitation Demo</h6>
+                <div class="ratio ratio-16x9 rounded overflow-hidden shadow-sm">
+                  <iframe src="https://www.youtube.com/embed/bXhfB_hUN0g" title="Magnet Levitation Video" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="mb-5">
+      <h3 class="fw-bold border-bottom pb-2 mb-4 text-primary">
+        Using Logisim Software & ARMLite Simulator
+      </h3>
+      <div class="row g-4">
+        
+        <div class="col-md-6">
+          <div class="card shadow-sm border-0 h-100">
+            <div class="card-body p-4 d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h5 class="card-title fw-bold">Digital Stopwatch</h5>
+                <span class="badge bg-dark">Logisim</span>
+              </div>
+              <p class="card-text text-muted small flex-grow-1 mb-3">
+                Developed a fully functional digital stopwatch using Logisim, implementing start/stop, reset, seconds, and minutes features. Designed modular circuits using logic gates, flip-flops (JK, D, T, SR), counters, splitters, LEDs, buttons, and hex digit displays to ensure accurate timekeeping and proper interface interaction.
+              </p>
+              <div class="mt-auto pt-2 border-top">
+                <h6 class="fw-bold small mb-2">Stopwatch Demo Video</h6>
+                <div class="ratio ratio-16x9 rounded overflow-hidden shadow-sm">
+                  <iframe src="https://www.youtube.com/embed/zOxtAvIImqQ" title="StopWatch Demo" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card shadow-sm border-0 h-100">
+            <div class="card-body p-4 d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h5 class="card-title fw-bold">Matchsticks Game (Assembly)</h5>
+                <span class="badge bg-dark">ARMLite Assembly</span>
+              </div>
+              <p class="card-text text-muted small flex-grow-1 mb-3">
+                Developed a fully functional Matchsticks game in ARM assembly, implementing a single-player vs computer mode with alternating turns, input validation, and game logic. Utilized ARMlite functions, arrays, and random number generation to handle player input and render a graphical display of remaining matchsticks.
+              </p>
+              <div class="mb-3">
+                <a href="stage4.txt" target="_blank" class="btn btn-outline-dark btn-sm">
+                  FULL Game Code (.txt)
+                </a>
+              </div>
+              <div class="mt-auto pt-2 border-top">
+                <h6 class="fw-bold small mb-2">Matchsticks Game Demo</h6>
+                <div class="ratio ratio-16x9 rounded overflow-hidden shadow-sm">
+                  <iframe src="https://www.youtube.com/embed/BUY-UNhl57k" title="Matchsticks Game Demo" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="mb-5">
+      <h3 class="fw-bold border-bottom pb-2 mb-4 text-primary">
+        Website Security & PLC Programming
+      </h3>
+      <div class="row g-4">
+        
+        <div class="col-md-6">
+          <div class="card shadow-sm border-0 h-100">
+            <div class="card-body p-4 d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h5 class="card-title fw-bold">Secure Web Deployment</h5>
+                <span class="badge bg-info text-dark">Chained Certificates</span>
+              </div>
+              <p class="card-text text-muted small flex-grow-1">
+                Implemented a HTTPS website secured by a certificate chain signed by a trusted root authority. Created an Intermediate Certificate Authority (CA), generated web server certificates, and chained them for deployment on Apache. Verified encrypted communications using Wireshark and configured browser trust.
+              </p>
+              <div class="mt-3 pt-2 border-top">
+                <a href="rule110_tne30024_Lab05-C.pdf" target="_blank" class="btn btn-outline-primary btn-sm">
+                  Summary Report PDF
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card shadow-sm border-0 h-100">
+            <div class="card-body p-4 d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h5 class="card-title fw-bold">Pick-and-Place PLC Programming</h5>
+                <span class="badge bg-warning text-dark">PLC Automation</span>
+              </div>
+              <p class="card-text text-muted small mb-2">
+                <strong>What is a PLC?</strong> A specialized industrial computer used to control automated processes by receiving inputs from sensors and controlling outputs such as motors, valves, and actuators.
+              </p>
+              <p class="card-text text-muted small flex-grow-1">
+                Programmed a pick-and-place sequential mechanism triggered by operator input. Managed positional sensors and a vacuum gripper to transfer objects safely and reset back to home position.
+              </p>
+              <div class="mt-3 pt-2 border-top">
+                <a href="PLC.txt" target="_blank" class="btn btn-outline-dark btn-sm">
+                  PLC Report & Full Code (.txt)
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="card border-0 bg-white p-4 text-center rounded-3 shadow-sm">
+      <p class="mb-0 text-muted fst-italic">
+        These laboratories involved hands-on experimentation, analysis, debugging, and reporting, reinforcing theoretical knowledge through practical implementation.
       </p>
-      <p>Find here is the link to the text file of the PLC Programming FULL CODE after 
-        completion: <a href="PLC.txt">PLC Report</a></p>
-      </li>
-    </ul>
+    </div>
 
-    <p>
-      These laboratories involved hands-on experimentation, analysis, debugging,
-      and reporting, reinforcing theoretical knowledge through practical
-      implementation.
-    </p>
   </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/bootstrap.bundle.min.js"></script>
 </body>
 </html>
