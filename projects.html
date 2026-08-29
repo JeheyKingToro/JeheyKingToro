@@ -10,19 +10,30 @@
 
 <body class="bg-light">
 
- <!-- Fully Configured Bootstrap 5 Navbar -->
+<style>
+  /* Custom CSS Toggle rule for mobile menu without JS */
+  @media (max-width: 991.88px) {
+    #nav-toggle:checked ~ #mainNavbar {
+      display: block !important;
+    }
+  }
+</style>
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
   <div class="container-fluid container-lg">
-    <a class="navbar-brand fw-bold" href="index.html">Cv Web</a>
+    <a class="navbar-brand fw-bold" href="index.html">CV WEB</a>
     
-    <!-- Mobile Hamburger Button -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- Hidden Checkbox -->
+    <input type="checkbox" id="nav-toggle" class="d-none">
+
+    <!-- Mobile Button hooked to checkbox -->
+    <label for="nav-toggle" class="navbar-toggler cursor-pointer" style="cursor: pointer;">
       <span class="navbar-toggler-icon"></span>
-    </button>
+    </label>
 
     <!-- Menu Links -->
     <div class="collapse navbar-collapse" id="mainNavbar">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 py-2 py-lg-0">
         <li class="nav-item">
           <a class="nav-link active fw-bold" href="index.html">Home</a>
         </li>
